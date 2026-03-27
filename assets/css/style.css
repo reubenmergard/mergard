@@ -14,7 +14,7 @@ body {
     "Nimbus Sans L", Arial, 
     sans-serif;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.2;
   color: #111;
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -101,6 +101,20 @@ h3 {
   color: #333;
 }
 
+/* --- FOOTER --- */
+
+.site-footer {
+  display: flex;
+  justify-content: space-between; /* pushes elements to edges */
+  align-items: baseline;           /* aligns text nicely */
+  padding: 40px 20px 20px;        /* top and bottom spacing */
+  border-top: 1px solid #eee;     /* optional subtle separation */
+  font-size: 0.9em;
+  color: #444;
+  max-width: 90ch;                /* keeps footer contained like body */
+  margin: 0 auto;                 /* center on page */
+}
+
 /* --- LINKS --- */
 
 a {
@@ -110,7 +124,7 @@ a {
 
 .side-links a {
   display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
   text-decoration: none;
 }
 
@@ -141,12 +155,12 @@ hr {
 
 @media (min-width: 900px) {
   .page {
-    padding: 10px 10px;
+    padding: 20px 20px;
   }
 }
 
 @media (min-width: 1400px) {
   .page {
-    padding: 10px 10px;
+    padding: 20px 20px;
   }
 }

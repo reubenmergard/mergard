@@ -32,3 +32,13 @@ title: Home
   </div>
 
 </div>
+
+<footer class="site-footer">
+  <div class="footer-left">
+    <p>for those who make</p>
+  </div>
+
+  <div class="footer-right">
+    <p>© {{ site.time | date: "%Y" }} Reuben Mergard</p>
+  </div>
+</footer>
