@@ -20,9 +20,8 @@ title: Home
 
   <div class="home-side">
     <div class="side-note">
-      <p>Clarity is a design discipline.</p>
+      <p>for those who make.</p>
     </div>
-
     <div class="side-links">
       <a href="/about/">About</a><br>
       <a href="/now/">Now</a><br>
