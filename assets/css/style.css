@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;          /* full viewport height */
+  margin: 0;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;     /* full height of viewport */
+}
+
+main.home-main {
+  flex: 1;               /* takes all available space between header and footer */
+}
+
 body {
   margin: 0;
   font-family: 
@@ -14,7 +29,7 @@ body {
     "Nimbus Sans L", Arial, 
     sans-serif;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #111;
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -24,6 +39,11 @@ body {
 
 .home-layout {
   position: relative;
+}
+
+/* Header */
+.site-header {
+  padding-bottom: 60px;
 }
 
 /* Left column (posts) */
@@ -60,7 +80,7 @@ body {
 
 .post-meta {
   color: #777;           /* lighter grey */
-  font-size: 0.8em;      /* smaller than title */
+  font-size: 1em;      /* same as title */
   white-space: nowrap;    /* prevents wrapping */
 }
 
@@ -94,25 +114,25 @@ h3 {
 }
 
 
-/* --- SIDE NOTE --- */
+/* --- SIDE NOTE 
 
 .side-note {
   margin-bottom: 24px;
   color: #333;
-}
+} --- */
 
 /* --- FOOTER --- */
 
 .site-footer {
   display: flex;
   justify-content: space-between; /* pushes elements to edges */
-  align-items: baseline;           /* aligns text nicely */
-  padding: 40px 20px 20px;        /* top and bottom spacing */
-  border-top: 1px solid #eee;     /* optional subtle separation */
-  font-size: 0.9em;
+  align-items: baseline;    /* aligns text nicely */
+  padding: 40px 20px 20px;  /* top and bottom spacing */
+  border-top: 0px solid #eee; /* optional subtle separation */
+  font-size: 1em;
   color: #444;
-  max-width: 90ch;                /* keeps footer contained like body */
-  margin: 0 auto;                 /* center on page */
+  max-width: 90ch; /* keeps footer contained like body */
+  margin: 0 ;
 }
 
 /* --- LINKS --- */
