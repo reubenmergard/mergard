@@ -52,6 +52,18 @@ body {
   }
 }
 
+.post-title-meta {
+  display: flex;
+  align-items: baseline; /* aligns nicely for small type differences */
+  gap: 16px;             /* space between title and date */
+}
+
+.post-meta {
+  color: #777;           /* lighter grey */
+  font-size: 0.8em;      /* smaller than title */
+  white-space: nowrap;    /* prevents wrapping */
+}
+
 /* --- TYPOGRAPHY --- */
 
 p {

@@ -11,10 +11,12 @@ title: Home
 
   <main class="home-main">
     {% for post in site.posts limit:20 %}
-      <div class="post-item">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <div class="post-meta">{{ post.date | date: "%d %b %Y" }}</div>
-      </div>
+    <div class="post-item">
+        <div class="post-title-meta">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="post-meta">{{ post.date | date: "%d %b %Y" }}</span>
+        </div>
+    </div>
     {% endfor %}
   </main>
 
