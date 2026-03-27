@@ -22,12 +22,34 @@ body {
 
 /* --- LAYOUT --- */
 
-.page {
-  padding: 40px 24px;
+.home-layout {
+  position: relative;
 }
 
-.content {
+/* Left column (posts) */
+.home-main {
   max-width: 65ch;
+}
+
+/* Floating right block */
+.home-side {
+  margin-top: 60px;
+  max-width: 28ch;
+}
+
+/* Desktop positioning */
+@media (min-width: 1000px) {
+
+  .home-layout {
+    display: grid;
+    grid-template-columns: 65ch 1fr;
+    column-gap: 80px;
+  }
+
+  .home-side {
+    margin-top: 0;
+    align-self: start;
+  }
 }
 
 /* --- TYPOGRAPHY --- */
@@ -59,12 +81,29 @@ h3 {
   margin-top: 0;
 }
 
+
+/* --- SIDE NOTE --- */
+
+.side-note {
+  margin-bottom: 24px;
+  color: #333;
+}
+
 /* --- LINKS --- */
 
 a {
   color: inherit;
   text-decoration: underline;
-  text-underline-offset: 2px;
+}
+
+.side-links a {
+  display: inline-block;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.side-links a:hover {
+  text-decoration: underline;
 }
 
 a:hover {
