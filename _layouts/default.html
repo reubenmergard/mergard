@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>{% if page.title and page.title != "Home" %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-  <div class="page">
-    <div class="content">
+  <div class="site-wrapper">
+
+    <main class="site-main">
       {{ content }}
-    </div>
+    </main>
+
+    <footer class="site-footer">
+      <span class="footer-left">for those who make.</span>
+      <span class="footer-right">© {{ site.time | date: "%Y" }} Reuben Mergard</span>
+    </footer>
+
   </div>
 </body>
 </html>
